@@ -11,3 +11,6 @@ function naoExistiValor(value, msg){
     return
   }
 }
+function existeDoisValores(valueA, valueB, msg){
+  if(valueA !== valueB) throw msg
+}
