@@ -1,4 +1,5 @@
 module.exports = {
+	
 	client: 'postgresql',
 	connection: {
 		database: 'meupet',

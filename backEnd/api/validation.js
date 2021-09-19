@@ -6,11 +6,12 @@ module.exports = app => {
   }
 
   function naoExistiValor(value, msg){
-    try{
-      existirError(value, msg)
-    } catch(msg){
-      return
+    try {
+      existsOrError(value, msg)
+    } catch(msg) {
+        return
     }
+    throw msg
   }
   function existeDoisValores(valueA, valueB, msg){
     if(valueA !== valueB) throw msg
