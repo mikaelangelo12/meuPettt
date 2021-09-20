@@ -57,7 +57,7 @@ module.exports = app => {
             .then(users => res.json(users))
             .catch(err => res.status(500).send(err))
     }
-/*
+
     const getById = (req, res) => {
         app.db('users')
             .select('id', 'name', 'email', 'admin')
@@ -84,6 +84,6 @@ module.exports = app => {
             res.status(400).send(msg)
         }
     }
-*/
-    return { save, get,  }
+
+    return { save, get, remove, getById  }
 }
